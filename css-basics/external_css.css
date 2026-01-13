@@ -1,0 +1,15 @@
+h1{
+    color: green;
+    background-color: black;
+    font-size: 28px;
+}
+h2{
+    color: lightgreen;
+    background-color: brown;
+    font-size: 22px;
+}
+p{
+    color: yellowgreen;
+    background-color: gray;
+    font-size: 16px;
+}
