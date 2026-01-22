@@ -1,0 +1,11 @@
+h1{
+    text-shadow: 3px 3px 5px rebeccapurple, -3px -3px 5px rgb(153, 51, 119) ;
+}
+#box1{
+    width: 200px;
+    height: 60px;
+    background-color: azure;
+    border: 3px, solid, black;
+    border-radius: 6px;
+    text-shadow: 2px 2px 5px rgb(199, 47, 176),2px 2px 5px rgb(0, 0, 0);
+}
