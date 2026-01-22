@@ -1,0 +1,27 @@
+h1{
+    border: 5px, inset , black;
+}
+#p1{
+    border: 2px, dotted, red;
+    border-radius: 20px;
+}
+#p2{
+    border: 2px, solid, orange;
+    border-width: 5px;
+}
+#p3{
+    border: 2px, double, violet;
+}
+#p4{
+    border: 3px, dashed, purple;
+}
+#p5{
+    border: 3px, ridge, purple;
+
+}
+#p6{
+    border-top: 2px, solid, blanchedalmond;
+    border-left: 2px, dashed, rgb(204, 120, 10);
+    border-right: 2px, inset, rgb(58, 37, 5);
+    border-bottom: 2px, outset, rgb(137, 121, 97);
+}
