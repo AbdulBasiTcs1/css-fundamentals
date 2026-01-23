@@ -1,0 +1,16 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative; 
+    top: 100px;
+    left: 100px;
+
+}
+/*
+position can be fixed
+position can be static
+position can be relative
+position can be absolute
+position can be sticky
+*/
