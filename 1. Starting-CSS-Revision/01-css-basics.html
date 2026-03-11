@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - CSS Basics</title>
+
+    <!-- Example of Internal CSS -->
+    <style>
+        /* This is a CSS comment */
+        
+        /* Basic Syntax rule: 
+           selector { 
+               property: value; 
+           } 
+        */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+
+        .concept-box {
+            background-color: #fff;
+            border: 2px solid #5e4c4c;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Slightly rounded corners */
+        }
+
+        .highlight {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Concept 1: CSS Basics</h1>
+
+    <div class="concept-box">
+        <h2>What is CSS?</h2>
+        <p><strong>CSS</strong> stands for <span class="highlight">Cascading Style Sheets</span>.</p>
+        <p>While HTML is used to structure a web document, CSS is used to dictate its style, layout, and presentation (colors, fonts, spacing, etc.).</p>
+    </div>
+
+    <div class="concept-box">
+        <h2>CSS Syntax</h2>
+        <p>A CSS rule consists of a <strong>selector</strong> and a <strong>declaration block</strong>.</p>
+        <code>
+            h1 { <br>
+            &nbsp;&nbsp;color: blue; <br>
+            &nbsp;&nbsp;font-size: 24px; <br>
+            }
+        </code>
+        <ul>
+            <li><strong>Selector (h1)</strong>: Points to the HTML element you want to style.</li>
+            <li><strong>Declaration (color: blue)</strong>: Contains a property and a value separated by a colon.</li>
+        </ul>
+    </div>
+
+    <div class="concept-box">
+        <h2>How to Add CSS to HTML</h2>
+        <ol>
+            <li>
+                <strong>Inline CSS:</strong> Added directly to an HTML element using the <code>style</code> attribute.<br>
+                <!-- Example of Inline CSS -->
+                <span style="color: green; font-weight: bold;">This text uses inline CSS (color: green).</span>
+            </li>
+            <br>
+            <li>
+                <strong>Internal CSS:</strong> Defined within a <code>&lt;style&gt;</code> element, inside the <code>&lt;head&gt;</code> section of an HTML page. (This current page uses internal CSS mostly).
+            </li>
+            <br>
+            <li>
+                <strong>External CSS:</strong> Defined in an external <code>.css</code> file, and linked inside the <code>&lt;head&gt;</code> using the <code>&lt;link&gt;</code> tag. This is the <strong>best practice</strong> for real projects!
+            </li>
+        </ol>
+    </div>
+
+    <p style="text-align: center;"><em>Review this file! Once you understand these basics and commit them, let me know, and we'll move on to the next concept.</em></p>
+
+</body>
+</html>
