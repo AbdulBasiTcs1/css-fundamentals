@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - CSS Selectors</title>
+    <style>
+        /* 1. Universal Selector: Targets ALL elements on the page (represented by *) */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* 2. Element Selector: Targets all elements of a given tag */
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 3. Class Selector: Targets elements with a specific class attribute (starts with a dot .) */
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* 4. ID Selector: Targets a single unique element with a specific id (starts with a hash #) */
+        #main-title {
+            color: #2e8b57;
+            /* SeaGreen */
+            text-align: center;
+        }
+
+        /* 5. Grouping Selector: Targets multiple selectors to apply the same rules (separated by commas) */
+        h2,
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        /* Styling for the container to make it look nice */
+        .container {
+            background-color: white;
+            border: 2px solid #5e4c4c;
+            /* Using the color you used in file 1! */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-title">Concept 2: CSS Selectors</h1>
+
+    <div class="container">
+        <h2>What are Selectors?</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. They are the core of how
+            CSS works.</p>
+
+        <h3>1. Element (Tag) Selector</h3>
+        <p>This whole paragraph is styled using the <strong>Element Selector</strong> (<code>p { ... }</code>). It
+            targets all <code>&lt;p&gt;</code> tags on the page automatically.</p>
+
+        <h3>2. Class Selector</h3>
+        <p>You can use a class to target specific elements. <span class="highlight">This text has the class
+                "highlight"</span> which gives it a yellow background. Multiple elements across your page can have the
+            same class, making it the most commonly used selector.</p>
+
+        <h3>3. ID Selector</h3>
+        <p>The main title of this page ("Concept 2: CSS Selectors") uses an <strong>ID Selector</strong>
+            (<code>#main-title { ... }</code>). IDs must be unique; you should only use a specific ID once per page.</p>
+
+        <h3>4. Grouping Selector</h3>
+        <p>Notice how the <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> tags in this document share the same dark
+            blue color? This is done using a <strong>Grouping Selector</strong> (<code>h2, h3 { ... }</code>) to write
+            less code and keep things DRY (Don't Repeat Yourself).</p>
+
+        <h3>5. Universal Selector</h3>
+        <p>The universal selector (<code>*</code>) applies styles to every single element on the page. It's often used
+            for resetting margins, padding, or setting global box models.</p>
+    </div>
+
+    <p style="text-align: center;"><em>Review this file, play around with the styles, commit when you're ready, and we
+            will jump to Concept 3!</em></p>
+
+</body>
+
+</html>
