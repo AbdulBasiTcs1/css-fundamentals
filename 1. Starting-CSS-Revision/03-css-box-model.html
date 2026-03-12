@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - The CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid #5e4c4c;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Base Box styling for visualization */
+        .box {
+            background-color: #3498db;
+            /* Blue background (content area color) */
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* 1. Content Area Only */
+        .box-content {
+            width: 250px;
+            height: 50px;
+            /* line-height centers text vertically when it equals height */
+            line-height: 50px;
+            margin: 0 auto 20px auto;
+            /* Centered with bottom margin */
+        }
+
+        /* 2. Content + Padding */
+        .box-padding {
+            width: 250px;
+            height: 50px;
+            padding: 20px;
+            /* Space inside the border, around the content */
+            margin: 0 auto 20px auto;
+        }
+
+        /* 3. Content + Padding + Border */
+        .box-border {
+            width: 250px;
+            height: 50px;
+            padding: 20px;
+            border: 10px solid #e74c3c;
+            /* Red border */
+            margin: 0 auto 20px auto;
+        }
+
+        /* 4. Complete Box Model (Content + Padding + Border + Margin) */
+        .box-margin {
+            width: 250px;
+            height: 50px;
+            padding: 20px;
+            border: 10px solid #e74c3c;
+            margin: 30px auto;
+            /* 30px top and bottom margin (space outside the border) */
+            background-color: #2ecc71;
+            /* Green background just to distinct it */
+        }
+
+        .explanation {
+            background-color: #fff9c4;
+            padding: 15px;
+            border-left: 5px solid #fbc02d;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Concept 3: The CSS Box Model</h1>
+
+    <div class="container">
+        <h2>What is the Box Model?</h2>
+        <div class="explanation">
+            <p>All HTML elements can be considered as boxes. In CSS, the term <strong>"box model"</strong> is used when
+                talking about design and layout.</p>
+            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of:
+                <strong>Content, Padding, Borders, and Margins</strong>.
+            </p>
+        </div>
+
+        <h3>1. Content</h3>
+        <p>The content of the box, where text and images appear. In this example, width is 250px and height is 50px.</p>
+        <div class="box box-content">CONTENT (250x50)</div>
+
+        <hr>
+
+        <h3>2. Content + Padding</h3>
+        <p><strong>Padding</strong> clears an area around the content. The padding is transparent. It sits
+            <em>inside</em> the border.
+        </p>
+        <p><em>Notice how the box got larger? Standard box-sizing adds padding & border to the base width!<br>Total
+                width is now 250 + 20(left) + 20(right) = 290px!</em></p>
+        <div class="box box-padding">CONTENT + PADDING</div>
+
+        <hr>
+
+        <h3>3. Content + Padding + Border</h3>
+        <p><strong>Border</strong> goes around the padding and content. We added a 10px solid red border.</p>
+        <p><em>Total width = 250(content) + 40(padding) + 20(borders) = 310px!</em></p>
+        <div class="box box-border">CONTENT + PADDING + BORDER</div>
+
+        <hr>
+
+        <h3>4. Complete: Content + Padding + Border + Margin</h3>
+        <p><strong>Margin</strong> clears an area outside the border. The margin is transparent. It separates this box
+            from other elements.</p>
+        <p><em>We added a 30px top and bottom margin to push it away from the text. Note: Margin does not affect the
+                size of the box itself, but the space around it.</em></p>
+        <div class="box box-margin">FULL BOX MODEL</div>
+
+    </div>
+
+    <p style="text-align: center;"><em>The Box Model is one of the most important concepts to master in CSS. Open this
+            file in your browser, play with the CSS values, and check out the changes!</em></p>
+
+</body>
+
+</html>
